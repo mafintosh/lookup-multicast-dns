@@ -1,0 +1,23 @@
+{
+  "name": "lookup-multicast-dns",
+  "version": "0.0.0",
+  "description": "WIP - nothing to see here",
+  "main": "index.js",
+  "bin": {
+    "lookup-multicast-dns": "./bin.js"
+  },
+  "dependencies": {
+    "multicast-dns": "^3.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/lookup-multicast-dns.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/lookup-multicast-dns/issues"
+  },
+  "homepage": "https://github.com/mafintosh/lookup-multicast-dns"
+}
