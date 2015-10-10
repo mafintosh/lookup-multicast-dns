@@ -13,15 +13,16 @@ function lookup (host, type, cb) {
 
 function mdnsLookup (host, type, cb) {
   var socket = mdns()
-  var recordType = type === 4 ? 'A' : 'AAAA'
+  var recordType = type === 6 ? 'AAAA' : 'A'
   var tries = 0
 
   socket.on('response', function (response) {
     for (var i = 0; i < response.answers.length; i++) {
       var a = response.answers[i]
+      console.log(recordType, type)
       if (a.name === host && a.type === recordType) {
         cleanup()
-        cb(null, a.data, 4)
+        cb(null, a.data, recordType === 'A' ? 4 : 6)
       }
     }
   })
