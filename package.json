@@ -1,6 +1,6 @@
 {
   "name": "lookup-multicast-dns",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lookup an ip for a hostname using multicast-dns if it is a .local domain or otherwise use the dns module",
   "main": "index.js",
   "bin": {
